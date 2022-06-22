@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cume</title>
+    <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link rel="stylesheet" href="assets/fonts/Bas/baseticalFont.css">
+    <link rel="stylesheet" href="assets/fonts/Neue/stylesheet.css">
+    <link rel="stylesheet" href="assets/fonts/helix/stylesheet.css">
+    <link rel="stylesheet" href="assets/fonts/helix-reg/stylesheet.css">
+    <link rel="stylesheet" href="assets/fonts/Brutal/stylesheet.css">
     <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/nav-bar.css">
     <link rel="stylesheet" href="assets/css/news-main.css">
     <link rel="stylesheet" href="assets/css/fontawesome-free-6.1.1-web/css/all.min.css">
     <script src="assets/js/navbar.js" defer></script>
+    <link rel="stylesheet" href="assets/css/custom-scroll.css">
 </head>
 <body>
     <!-- Header Nav Bar -->
@@ -22,17 +28,11 @@
                 <li class="nav-item">
                     <a href="index.html" class="nav-item-link nonsearch">home</a></li>
                 <li  class="nav-item">
-                    <a href="news.html" class="nav-item-link nonsearch2 nav-item-link--chosen">news</a>
+                    <a href="" class="nav-item-link nonsearch2 nav-item-link--chosen">news</a>
                 </li>
                 <li class="nav-item"><a href="games.html" class="nav-item-link nonsearch3">games</a></li>
-                <li class="nav-item"><a href="" class="nav-item-link nonsearch4">support</a></li>
+                <li class="nav-item"><a href="support.html" class="nav-item-link nonsearch4">support</a></li>
                 <li class="nav-item"><a href="login.html" class="nav-item-link nonsearch5"><i class="fa-solid fa-user"></i></a></li>
-                <li class="nav-item">
-                    <div class="nav-item-search">
-                        <input class="login-email" type="text" placeholder="Search here!">
-                        <a class="nav-item-link search-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    </div>
-                </li>
                 <li class="nav-item nav-item--list">
                     <button class="button is-text" id="menu-button">
                         <div class="button-inner-wrapper">
@@ -53,7 +53,7 @@
             </li>
             <li>
                 <ul class="nav-list-mobile_left">
-                    <li>support</li>
+                    <li><a href="support.html">support</a></li>
                     <li><a href="login.html">account</a></li>
                     <li>search</li>
                 </ul>
@@ -61,16 +61,24 @@
         </ul>
     </header>
 
-    <!-- Content -->
+    <div class="main" id="butter">
+        <!-- Content -->
     <div class="content">
+        <div class="content_search">
+            <h2>News</h2>
+            <div class="content_search-input">
+                <input type="text" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
         <!-- Featured news -->
         <div class="news_top">
             <div class="new_top-link">
-                <div class="new_top-img top-img-1 new_top--choose">
+                <div class="new_top-img top-img-1">
                     <h2 class="new_top-text">Digimon, more like Pokemon??</h2>
                 </div>
 
-                <div class="new_top-img top-img-2 new_top--choose">
+                <div class="new_top-img top-img-2">
                     <h2 class="new_top-text">NFT is making a break</h2>
                 </div>
                     
@@ -81,10 +89,6 @@
 
         <!-- News -->
         <div class="news_mid">
-            <!-- Sort by -->
-            <h2 class="news_mid-sort-text">Sort by</h2>
-
-
             <a class="news_mid-item" href="news-item.html">
                 <div class="news_mid-item-left">
                     <img src="assets/img/news/mid/1.jpg" alt="">
@@ -112,12 +116,33 @@
 
             <a class="news_mid-item">
                 <div class="news_mid-item-left">
-                    <img src="assets/img/news/mid/3.jfif" alt="">
+                    <img src="assets/img/news/mid/summer-fest.jpg" alt="">
                 </div>
                 <div class="news_mid-item-right">
-                    <h2>Tokyo's Shibuya - Hot bang coming out in 2022</h2>
-                    <p>" Tokyo's Shibuya district is one of the liveliest places on the planet.
-                        Day or night, it's generally densely packed with people and positively "
+                    <h2>The Biggest Summer Game Fest Announcements and Reveals for 2022</h2>
+                    <p>" Summer Game Fest, Geoff Keighley’s celebration of the biggest, most exciting games on the horizon, has just wrapped. The show gave us a look at the next few years of gaming "
+                    </p>
+                </div>
+            </a>
+
+            <a class="news_mid-item">
+                <div class="news_mid-item-left">
+                    <img src="assets/img/news/mid/goat-simulator.jfif" alt="">
+                </div>
+                <div class="news_mid-item-right">
+                    <h2>Goat Simulator 3 skips a sequel on its way to the Epic Games Store</h2>
+                    <p>" Goat Simulator 3, the sequel to Goat Simulator (but not to Goat Simulator 2, which doesn’t exist… we’ve looked it up and can’t find anything at least), is coming to the PC as an Epic Games Store exclusive "
+                    </p>
+                </div>
+            </a>
+
+            <a class="news_mid-item">
+                <div class="news_mid-item-left">
+                    <img src="assets/img/news/mid/saint-row.jfif" alt="">
+                </div>
+                <div class="news_mid-item-right">
+                    <h2>Saints Row’s Boss Factory Character Creator Tips, Tricks, and Secrets</h2>
+                    <p>" In the full game, a reboot of the Saints Row series with a new setting, gang, and more grounded world,  the customization covers a huge range of options. You’ll be able to detail cars, redesign weapons, and decorate your HQ "
                     </p>
                 </div>
             </a>
@@ -127,62 +152,74 @@
                     <img src="assets/img/news/mid/3.jfif" alt="">
                 </div>
                 <div class="news_mid-item-right">
-                    <h2>Tokyo's Shibuya - Hot bang coming out in 2022</h2>
-                    <p>" Tokyo's Shibuya district is one of the liveliest places on the planet.
-                        Day or night, it's generally densely packed with people and positively "
+                    <h2>Fortnite and Marvel 2nd collaboration</h2>
+                    <p>" The sequel we have been waiting for years have now come. The biggest update
+                        ever coming to Fortnite, with the Marvel superheroes Dr Strange. "
                     </p>
                 </div>
             </a>
 
             <a class="news_mid-item">
                 <div class="news_mid-item-left">
-                    <img src="assets/img/news/mid/3.jfif" alt="">
+                    <img src="assets/img/news/mid/the-cycle.jpg" alt="">
                 </div>
                 <div class="news_mid-item-right">
-                    <h2>Tokyo's Shibuya - Hot bang coming out in 2022</h2>
-                    <p>" Tokyo's Shibuya district is one of the liveliest places on the planet.
-                        Day or night, it's generally densely packed with people and positively "
+                    <h2>The Cycle: Frontier Pre-Season One starts now</h2>
+                    <p>" Grab your gear, Prospector, and drop down onto the beautiful, but dangerous planet, Fortuna III.  Map instances stay open for several hours, so Prospectors can drop to the planet's surface at any time as long as the Cycle, a radioactive storm, is not raging. "
+                    </p>
+                </div>
+            </a>
+            
+            <a class="news_mid-item">
+                <div class="news_mid-item-left">
+                    <img src="assets/img/news/mid/true-fear.jpg" alt="">
+                </div>
+                <div class="news_mid-item-right">
+                    <h2>True Fear: Forsaken Souls Part 1 is now available on Epic Games Store!</h2>
+                    <p>" Goblinz has managed to craft a deeply unsettling, impressively scream-worthy experience with True Fear: Forsaken Souls - a title that delivers more frights than some of the most expensive horror games out there. "
                     </p>
                 </div>
             </a>
 
             <a class="news_mid-item">
                 <div class="news_mid-item-left">
-                    <img src="assets/img/news/mid/3.jfif" alt="">
+                    <img src="assets/img/news/mid/ca-ling-chi.jpg" alt="">
                 </div>
                 <div class="news_mid-item-right">
-                    <h2>Tokyo's Shibuya - Hot bang coming out in 2022</h2>
-                    <p>" Tokyo's Shibuya d  istrict is one of the liveliest places on the planet.
-                        Day or night, it's generally densely packed with people and positively "
+                    <h2>Oh no? Cringe?</h2>
+                    <p>" I did all this at 4 damn AM. Yes, iam not lying, this is the weirdest thing i have ever done but whatever, enjoy the website. "
                     </p>
                 </div>
             </a>
-
         </div>
 
-
+        <footer class="footer">
+            <div class="footer_left">
+                <p class="footer_left-logo">cume</p>
+            </div>
+    
+            <div class="footer_middle">
+                <p class="footer_middle-about">about us</p>
+                <p class="footer_middle-info">funny website built by two fun bois, inspired heavily by <span style="color: var(--yellow-color);">Steam</span>, <span style="color: var(--yellow-color);">4v</span>, <span style="color: var(--yellow-color);">Revolt</span></p>
+            </div>
+    
+            <div class="footer_right">
+                <p class="footer_right-about">get in touch</p>
+                <div class="footer_right-icon">
+                    <a href="" class="fa-brands fa-facebook footer_right-social"></a>
+                    <a href="" class="fa-brands fa-discord footer_right-social"></a>
+                    <a href="" class="fa-brands fa-twitter footer_right-social"></a>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <div class="modal"></div>
+    </div>
 
-    <footer class="footer">
-        <div class="footer_left">
-            <p class="footer_left-logo">cume</p>
-        </div>
-
-        <div class="footer_middle">
-            <p class="footer_middle-about">about us</p>
-            <p class="footer_middle-info">funny website built by two fun bois, inspired heavily by <span style="color: var(--yellow-color);">Steam</span>, <span style="color: var(--yellow-color);">4v</span>, <span style="color: var(--yellow-color);">Revolt</span></p>
-        </div>
-
-        <div class="footer_right">
-            <p class="footer_right-about">get in touch</p>
-            <div class="footer_right-icon">
-                <a href="" class="fa-brands fa-facebook footer_right-social"></a>
-                <a href="" class="fa-brands fa-discord footer_right-social"></a>
-                <a href="" class="fa-brands fa-twitter footer_right-social"></a>
-            </div>
-        </div>
-    </footer>
+    <script src="assets/js/butter-scroll.js"></script>
+    <script>
+        butter.init();
+      </script>
 </body>
 </html>

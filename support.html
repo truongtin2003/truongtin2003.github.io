@@ -8,7 +8,12 @@
     <title>Cume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="assets/fonts/Bas/baseticalFont.css">
+    <link rel="stylesheet" href="assets/fonts/Neue/stylesheet.css">
+    <link rel="stylesheet" href="assets/fonts/helix/stylesheet.css">
+    <link rel="stylesheet" href="assets/fonts/helix-reg/stylesheet.css">
+    <link rel="stylesheet" href="assets/fonts/Brutal/stylesheet.css">
     <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/nav-bar.css">
     <link rel="stylesheet" href="assets/css/support.css">
     <script src="assets/js/game-item.js" defer></script>
     <link rel="stylesheet" href="assets/css/fontawesome-free-6.1.1-web/css/all.min.css">
@@ -24,20 +29,14 @@
 
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="" class="nav-item-link nonsearch">home</a>
+                    <a href="index.html" class="nav-item-link nonsearch">home</a>
                 </li>
                 <li class="nav-item">
                     <a href="news.html" class="nav-item-link nonsearch2">news</a>
                 </li>
-                <li class="nav-item"><a href="" class="nav-item-link nonsearch3">games</a></li>
+                <li class="nav-item"><a href="games.html" class="nav-item-link nonsearch3">games</a></li>
                 <li class="nav-item"><a href="" class="nav-item-link nonsearch3 nav-item-link--chosen">support</a></li>
-                <li class="nav-item"><a href="" class="nav-item-link nonsearch5"><i class="fa-solid fa-user"></i></a>
-                </li>
-                <li class="nav-item">
-                    <div class="nav-item-search">
-                        <input class="login-email" type="text" placeholder="Search here!">
-                        <a class="nav-item-link search-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    </div>
+                <li class="nav-item"><a href="login.html" class="nav-item-link nonsearch5"><i class="fa-solid fa-user"></i></a>
                 </li>
                 <li class="nav-item nav-item--list">
                     <button class="button is-text" id="menu-button">
@@ -94,13 +93,13 @@
         </div>
         <div class="content_right" id="content_infor">
             <h1>Support</h1>
-            <pre>
+            <p>
             Lorem ipsum dolor sit amet consectetur,
             adipisicing elit.Nihil velit iusto ratione,
             laboriosam fugit architecto autem culpa delectus
             iure libero.Aperiam deserunt, porro accusamus 
             assumenda commodi ab soluta? Velit, in!
-            </pre>
+            </p>
         </div>
 
 
@@ -109,28 +108,7 @@
     </div>
 
     <div class="hidden"></div>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            freeMode: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-
-
-        // // document.getElementById("content_infor").style.display = "block";
-        // $(document).ready(function () {
-        //     $(".information").click(function () {
-        //         $(".content_right").toggleClass("hidden");
-        //     });
-        // });
         let x = 0;
         function turnOff() {
             if (x % 2 == 0) {

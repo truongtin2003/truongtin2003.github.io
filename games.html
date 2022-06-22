@@ -7,11 +7,17 @@
     <title>Cume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="assets/fonts/Bas/baseticalFont.css">
+    <link rel="stylesheet" href="assets/fonts/Neue/stylesheet.css">
+    <link rel="stylesheet" href="assets/fonts/helix/stylesheet.css">
+    <link rel="stylesheet" href="assets/fonts/helix-reg/stylesheet.css">
+    <link rel="stylesheet" href="assets/fonts/Brutal/stylesheet.css">
     <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/nav-bar.css">
     <link rel="stylesheet" href="assets/css/games-main.css">
     <link rel="stylesheet" href="assets/css/fontawesome-free-6.1.1-web/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="assets/js/navbar.js" defer></script>
+    <script src="assets/js/games-main.js" defer></script>
 </head>
 <body style="overflow-x: hidden;">
     <header class="header">
@@ -27,12 +33,6 @@
                 <li class="nav-item"><a href="" class="nav-item-link nonsearch3 nav-item-link--chosen">games</a></li>
                 <li class="nav-item"><a href="support.html" class="nav-item-link nonsearch4">support</a></li>
                 <li class="nav-item"><a href="login.html" class="nav-item-link nonsearch5"><i class="fa-solid fa-user"></i></a></li>
-                <li class="nav-item">
-                    <div class="nav-item-search">
-                        <input class="login-email" type="text" placeholder="Search here!">
-                        <a class="nav-item-link search-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    </div>
-                </li>
                 <li class="nav-item nav-item--list">
                     <button class="button is-text" id="menu-button">
                         <div class="button-inner-wrapper">
@@ -61,147 +61,109 @@
         </ul>
     </header>
     
-    <div class="content">
-        <div class="content_top">
-            <div class="content_top-event">
-                <img src="assets/img/games/event-bg.png" alt="">
-                <p>click for more info</p>
+    <div class="main" id="butter">
+        <div class="content">
+            <div class="content_search">
+                <button class="content_game-switch">
+                    <h2>Discover
+                    </h2>
+                    <i class="fa-solid fa-chevron-down arrow-down"></i>
+                    <ul class="content_game-switch_box">
+                        <li class="content_game-switch_box--chosen">Discover</li>
+                        <li>Browse </li>
+                    </ul>
+                </button>
+                <div class="content_search-input">
+                    <input type="text" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
             </div>
 
-            <div class="content_feature">
-                <p>Feature & Recommended</p>
-                <div class="swiper mySwiper1 content_feature-images-slide">
-                    <div class="swiper-wrapper feature">
-                        <div class="swiper-slide content_feature_box">
-                            <img class="content_feature-img" src="assets/img/games/featured/gow/goww.jpg" alt="" id="imageBox1">
-    
-                            <div class="content_feature_info">
-                                <div class="content_feature_info-title">GOD OF WAR</div>
-    
-                                <div class="content_feature_info-img">
-                                <img src="assets/img/games/featured/gow/gow-1.jpg" onclick="changeImage1('one1')" id="one1">
-                                <img src="assets/img/games/featured/gow/gow-2.jpg" onclick="changeImage1('two1')" id="two1">
-                                <img src="assets/img/games/featured/gow/gow-3.jpg" onclick="changeImage1('three1')" id="three1">
-                                <img src="assets/img/games/featured/gow/gow-4.jpg" onclick="changeImage1('four1')" id="four1">
-                                </div>
-    
-                                <div class="content_feature_info-state">now available</div>
-    
-                                <div class="content_feature_info-sale">
-                                    <div class="top_seller">top seller</div>
-                                    <p>$69.69</p>
-                                    <i class="fa-brands fa-windows"></i>
-                                    <i class="fa-solid fa-apple-whole"></i>
-                                </div>
+                <div class="content_feature">
+                    <div class="content_feature_left">
+                        <a href="games-item.html" class="content_feature_left-item box1">
+                            <img src="assets/img/news/mid/summer-fest.jpg" alt="">
+                            <div class="content_feature_left-item-text">
+                                <h2>Don't miss out</h2>
+                                <p>It's your last chance to save big on great games with an additional 25% off using the Epic Coupon. Sale ends June 16!</p>
+                            </div>
+                        </a>
+
+                        <div class="content_feature_left-item box2">
+                            <img src="assets/img/games/featured/rocket-leauge.jpg" alt="">
+                            <div class="content_feature_left-item-text">
+                                <img style="filter: invert(82%) sepia(70%) saturate(378%) hue-rotate(127deg) brightness(100%) contrast(98%);" src="assets/img/games/featured/rocket-leauge-title.jpg" alt="">
+                                <h2>NEW SEASON</h2>
+                                <p>Taste the finer things in life during Season 7 with an all-new Rocket Pass, Utopia Lux Arena, and dazzling content!</p>
                             </div>
                         </div>
 
-                        <div class="swiper-slide content_feature_box">
-                            <img class="content_feature-img" src="assets/img/games/featured/gow/goww.jpg" alt="" id="imageBox2">
-    
-                            <div class="content_feature_info">
-                                <div class="content_feature_info-title">GOD OF WAR</div>
-    
-                                <div class="content_feature_info-img">
-                                    <img src="assets/img/games/featured/gow/gow-1.jpg" onclick="changeImage2('one2')" id="one2">
-                                    <img src="assets/img/games/featured/gow/gow-2.jpg" onclick="changeImage2('two2')" id="two2">
-                                    <img src="assets/img/games/featured/gow/gow-3.jpg" onclick="changeImage2('three2')" id="three2">
-                                    <img src="assets/img/games/featured/gow/gow-4.jpg" onclick="changeImage2('four2')" id="four2">
-                                </div>
-    
-                                <div class="content_feature_info-state">now available</div>
-    
-                                <div class="content_feature_info-sale">
-                                    <div class="top_seller">top seller</div>
-                                    <p>$69.69</p>
-                                    <i class="fa-brands fa-windows"></i>
-                                    <i class="fa-solid fa-apple-whole"></i>
-                                </div>
+                        <div class="content_feature_left-item box3">
+                            <img src="assets/img/news/mid/saint-row.jfif" alt="">
+                            <div class="content_feature_left-item-text">
+                                <img style="filter: invert(82%) sepia(70%) saturate(378%) hue-rotate(127deg) brightness(100%) contrast(98%);" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Saint_Row_2022_black_logo.png/640px-Saint_Row_2022_black_logo.png" alt="">
+                                <h2>NEW SEASON</h2>
+                                <p>Unlock your unltimate power with the new Saint customization tabs ever seen in a Saint Row games.</p>
                             </div>
                         </div>
-                        <div class="swiper-slide content_feature_box">
-                            <img class="content_feature-img" src="assets/img/games/featured/gow/goww.jpg" alt="" id="imageBox3">
-    
-                            <div class="content_feature_info">
-                                <div class="content_feature_info-title">GOD OF WAR</div>
-    
-                                <div class="content_feature_info-img">
-                                    <img src="assets/img/games/featured/gow/gow-1.jpg" onclick="changeImage3('one3')" id="one3">
-                                    <img src="assets/img/games/featured/gow/gow-2.jpg" onclick="changeImage3('two3')" id="two3">
-                                    <img src="assets/img/games/featured/gow/gow-3.jpg" onclick="changeImage3('three3')" id="three3">
-                                    <img src="assets/img/games/featured/gow/gow-4.jpg" onclick="changeImage3('four3')" id="four3">
-                                </div>
-    
-                                <div class="content_feature_info-state">now available</div>
-    
-                                <div class="content_feature_info-sale">
-                                    <div class="top_seller">top seller</div>
-                                    <p>$69.69</p>
-                                    <i class="fa-brands fa-windows"></i>
-                                    <i class="fa-solid fa-apple-whole"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide content_feature_box">
-                            <img class="content_feature-img" src="assets/img/games/featured/gow/goww.jpg" alt="" >
-    
-                            <div class="content_feature_info">
-                                <div class="content_feature_info-title"></div>
-    
 
-    
-                                <div class="content_feature_info-state">now available</div>
-    
-                                <div class="content_feature_info-sale">
-                                    <div class="top_seller">top seller</div>
-                                    <p>$69.69</p>
-                                    <i class="fa-brands fa-windows"></i>
-                                    <i class="fa-solid fa-apple-whole"></i>
-                                </div>
+                        <div class="content_feature_left-item box4">
+                            <img src="assets/img/games/spidermann.webp" alt="">
+                            <div class="content_feature_left-item-text">
+                                <img src="assets/img/games/featured/spiderman-title.png" alt="">
+                                <h2>NEW SEASON</h2>
+                                <p>In the new world of the one and only Spider Man, exsisting in the Marvel Universe is back with a new looks.</p>
                             </div>
+                        </div>
+
+                        <div class="content_feature_left-item box5">
+                            <img src="assets/img/games/f29c62a51480426287cfab39330bfbbb1a49e266.webp" alt="">
+                            <div class="content_feature_left-item-text">
+                                <img style="filter: invert(82%) sepia(70%) saturate(378%) hue-rotate(127deg) brightness(100%) contrast(98%);" src="assets/img/games/featured/Genshin-Impact-Logo.png" alt="">
+                                <h2>NEW SEASON</h2>
+                                <p>New Xiao story, new content to explore. What are you waiting for? The new version 2.7 is out now!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content_feature_right">
+                        <div class="content_feature_right-item but1">
+                            <div class="content_feature-img">
+                                <img src="assets/img/news/mid/summer-fest.jpg" alt="">
+                            </div>
+                            <p>Mega Sales Ending Soon</p>
+                        </div>
+
+                        <div class="content_feature_right-item but2">
+                            <div class="content_feature-img">
+                                <img src="assets/img/games/featured/rocket-leauge.jpg" alt="">
+                            </div>
+                            <p>Rocket Leauge</p>
+                        </div>
+
+                        <div class="content_feature_right-item but3">
+                            <div class="content_feature-img">
+                                <img src="assets/img/news/mid/saint-row.jfif" alt="">
+                            </div>
+                            <p>Saint Row</p>
+                        </div>
+
+                        <div class="content_feature_right-item but4">
+                            <div class="content_feature-img">
+                                <img src="assets/img/games/spiderman-icon.jfif" alt="">
+                            </div>
+                            <p>Marvel's Spider-Man Remastered</p>
+                        </div>
+
+                        <div class="content_feature_right-item but5">
+                            <div class="content_feature-img">
+                                <img src="assets/img/games/Genshin_Impact_cover.jpg" alt="">
+                            </div>
+                            <p>Genshin Impact</p>
                         </div>
 
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
                 </div>
-                <script>
-                    function changeImage1(id){
-                        let imagePath = document.getElementById(id).getAttribute('src');
-                        document.getElementById('imageBox1').setAttribute('src', imagePath);
-                    }
-                    function changeImage2(id){
-                        let imagePath = document.getElementById(id).getAttribute('src');
-                        document.getElementById('imageBox2').setAttribute('src', imagePath);
-                    }
-                    function changeImage3(id){
-                        let imagePath = document.getElementById(id).getAttribute('src');
-                        document.getElementById('imageBox3').setAttribute('src', imagePath);
-                    }
-
-                </script>
-            </div>
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper1 = new Swiper(".mySwiper1", {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
 
             <div class="content_famous">
                 <p>Famous Keyword</p>
@@ -308,24 +270,24 @@
                 <div class="swiper-pagination"></div>
             </div>
             <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper2 = new Swiper(".mySwiper2", {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+            <!-- Initialize Swiper -->
+            <script>
+            var swiper2 = new Swiper(".mySwiper2", {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                loop: true,
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+            });
+            </script>
 
             <div class="content_nongame swiper mySwiper">
                 <p class="content_nongame-text">Non Game Products</p>
@@ -395,309 +357,292 @@
             </div>
 
             <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 60,
-        slidesPerGroup: 3,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+            <!-- Initialize Swiper -->
+            <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 60,
+                slidesPerGroup: 3,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+            });
+            </script>
 
+            <div class="swiper mySwiper content_nongame">
+                <p class="content_nongame-text">New & trending</p>
+                <div class="swiper-wrapper content_nongame_box">
 
-        </div>
-    </div>
+                    <div class="swiper-slide content_nongame_item">
+                        <img src="assets/img/games/nongame/roblox_premium.jpg" alt="">
+                        <div class="content_nongame_item-info">
+                            <p>Roblox premium - 3 months</p>
+                            <div class="content_nongame_item_price">
+                                <span>$10.99</span> <del>$17.49</del>
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="swiper mySwiper content_nongame">
-        <p class="content_nongame-text">New & trending</p>
-        <div class="swiper-wrapper content_nongame_box">
+                    <div class="swiper-slide content_nongame_item">
+                        <img src="assets/img/games/nongame/MInecraft-Premium.jpg" alt="">
+                        <div class="content_nongame_item-info">
+                            <p>Minecraft premium - 1 month</p>
+                            <div class="content_nongame_item_price">
+                                <span>$5.39</span> <del>$6.99</del>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="swiper-slide content_nongame_item">
-                <img src="assets/img/games/nongame/roblox_premium.jpg" alt="">
-                <div class="content_nongame_item-info">
-                    <p>Roblox premium - 3 months</p>
-                    <div class="content_nongame_item_price">
-                        <span>$10.99</span> <del>$17.49</del>
+                    <div class="swiper-slide content_nongame_item">
+                        <img src="assets/img/games/nongame/thantrung.jpg" alt="">
+                        <div class="content_nongame_item-info">
+                            <p>Thần Trùng (The Death) - demo</p>
+                            <div class="content_nongame_item_price">
+                                <span>$free</span> <del>$1.99</del>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide content_nongame_item">
+                        <img src="assets/img/games/nongame/CoMau.jpg" alt="">
+                        <div class="content_nongame_item-info">
+                            <p>Cỏ Máu (Blood Field) - demo</p>
+                            <div class="content_nongame_item_price">
+                                <span>$free</span> <del>$1.00</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide content_nongame_item">
+                        <img src="assets/img/games/nongame/gta.jpg" alt="">
+                        <div class="content_nongame_item-info">
+                            <p>GTA V</p>
+                            <div class="content_nongame_item_price">
+                                <span>$20.39</span> <del>$30.99</del>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide content_nongame_item">
+                        <img src="assets/img/games/nongame/muck.jpg" alt="">
+                        <div class="content_nongame_item-info">
+                            <p>MUCK</p>
+                            <div class="content_nongame_item_price">
+                                <span>$free</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
 
-            <div class="swiper-slide content_nongame_item">
-                <img src="assets/img/games/nongame/MInecraft-Premium.jpg" alt="">
-                <div class="content_nongame_item-info">
-                    <p>Minecraft premium - 1 month</p>
-                    <div class="content_nongame_item_price">
-                        <span>$5.39</span> <del>$6.99</del>
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+            var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 60,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            });
+            </script>
+            <div class="swiper mySwiper content_nongame">
+                <p class="content_nongame-text">Popular coming</p>
+                <div class="swiper-wrapper content_nongame_box">
+                    <div class="swiper-slide content_nongame_item">
+                        <img src="assets/img/games/nongame/karlson.jpg" alt="">
+                        <div class="content_nongame_item-info">
+                            <p>Karlson</p>
+                            <div class="content_nongame_item_price">
+                                <span>Coming soon</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="swiper-slide content_nongame_item">
-                <img src="assets/img/games/nongame/thantrung.jpg" alt="">
-                <div class="content_nongame_item-info">
-                    <p>Thần Trùng (The Death) - demo</p>
-                    <div class="content_nongame_item_price">
-                        <span>$free</span> <del>$1.99</del>
+                    <div class="swiper-slide content_nongame_item">
+                        <img src="assets/img/games/nongame/devour.jpg" alt="">
+                        <div class="content_nongame_item-info">
+                            <p>Devour - new map</p>
+                            <div class="content_nongame_item_price">
+                                <span>Coming soon</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="swiper-slide content_nongame_item">
-                <img src="assets/img/games/nongame/CoMau.jpg" alt="">
-                <div class="content_nongame_item-info">
-                    <p>Cỏ Máu (Blood Field) - demo</p>
-                    <div class="content_nongame_item_price">
-                        <span>$free</span> <del>$1.00</del>
+
+                    <div class="swiper-slide content_nongame_item">
+                        <img src="assets/img/games/nongame/shopee_voucher.jpg" alt="">
+                        <div class="content_nongame_item-info">
+                            <p>Shopee voucher - 50% sales</p>
+                            <div class="content_nongame_item_price">
+                                <span>Coming soon</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide content_nongame_item">
-                <img src="assets/img/games/nongame/gta.jpg" alt="">
-                <div class="content_nongame_item-info">
-                    <p>GTA V</p>
-                    <div class="content_nongame_item_price">
-                        <span>$20.39</span> <del>$30.99</del>
+                    <div class="swiper-slide content_nongame_item">
+                        <img src="assets/img/games/nongame/freefire.jpg" alt="">
+                        <div class="content_nongame_item-info">
+                            <p>Free Fire battleground</p>
+                            <div class="content_nongame_item_price">
+                                <span>$13.99</span> <del>$17.49</del>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="swiper-slide content_nongame_item">
-                <img src="assets/img/games/nongame/muck.jpg" alt="">
-                <div class="content_nongame_item-info">
-                    <p>MUCK</p>
-                    <div class="content_nongame_item_price">
-                        <span>$free</span>
+                    <div class="swiper-slide content_nongame_item">
+                        <img src="assets/img/games/nongame/vlr-nightmarket.jpg" alt="">
+                        <div class="content_nongame_item-info">
+                            <p>VALORANT - night market</p>
+                            <div class="content_nongame_item_price">
+                                <span>Coming soon</span>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="swiper-slide content_nongame_item">
+                        <img src="assets/img/games/nongame/taiuong.jpg" alt="">
+                        <div class="content_nongame_item-info">
+                            <p>Tai Ương (The scourge) - demo</p>
+                            <div class="content_nongame_item_price">
+                                <span>Coming soon</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            
             </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
 
-    </div>
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <!-- Initialize Swiper -->
+            <script>
+            var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 60,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            });
+            </script>
+            <div class="swiper mySwiper content_nongame">
+                <p class="content_nongame-text">Top seller</p>
+                <div class="swiper-wrapper content_nongame_box">
+                    <div class="swiper-slide content_nongame_item">
+                        <img src="assets/img/games/nongame/hoa.jpg" alt="">
+                        <div class="content_nongame_item-info">
+                            <p>Hoa</p>
+                            <div class="content_nongame_item_price">
+                                <span>$5.99</span>
+                            </div>
+                        </div>
+                    </div>
 
-<!-- Initialize Swiper -->
-<script>
-var swiper = new Swiper(".mySwiper", {
-slidesPerView: 3,
-spaceBetween: 60,
-slidesPerGroup: 3,
-loop: true,
-loopFillGroupWithBlank: true,
-pagination: {
-  el: ".swiper-pagination",
-  clickable: true,
-},
-navigation: {
-  nextEl: ".swiper-button-next",
-  prevEl: ".swiper-button-prev",
-},
-});
-</script>
+                    <div class="swiper-slide content_nongame_item">
+                        <img src="assets/img/games/nongame/nomansky.jpg" alt="">
+                        <div class="content_nongame_item-info">
+                            <p>No Man Sky</p>
+                            <div class="content_nongame_item_price">
+                                <span>$10.39</span>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="swiper-slide content_nongame_item">
+                        <img src="assets/img/games/nongame/phasmophobia.jpg" alt="">
+                        <div class="content_nongame_item-info">
+                            <p>Phasmophobia</p>
+                            <div class="content_nongame_item_price">
+                                <span>$3.99</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide content_nongame_item">
+                        <img src="assets/img/games/nongame/projectzomboid.jpg" alt="">
+                        <div class="content_nongame_item-info">
+                            <p>Project Zomboid</p>
+                            <div class="content_nongame_item_price">
+                                <span>$6.99</span>
+                            </div>
+                        </div>
+                    </div>
 
-</div>
-</div>
-<div class="swiper mySwiper content_nongame">
-    <p class="content_nongame-text">Popular coming</p>
-    <div class="swiper-wrapper content_nongame_box">
-        <div class="swiper-slide content_nongame_item">
-            <img src="assets/img/games/nongame/karlson.jpg" alt="">
-            <div class="content_nongame_item-info">
-                <p>Karlson</p>
-                <div class="content_nongame_item_price">
-                    <span>Coming soon</span>
+                    <div class="swiper-slide content_nongame_item">
+                        <img src="assets/img/games/nongame/theforest.jpg" alt="">
+                        <div class="content_nongame_item-info">
+                            <p>The Forest</p>
+                            <div class="content_nongame_item_price">
+                                <span>$3.39</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide content_nongame_item">
+                        <img src="assets/img/games/nongame/spore.jpg" alt="">
+                        <div class="content_nongame_item-info">
+                            <p>Spore</p>
+                            <div class="content_nongame_item_price">
+                                <span>$2.39</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-        </div>
 
-        <div class="swiper-slide content_nongame_item">
-            <img src="assets/img/games/nongame/devour.jpg" alt="">
-            <div class="content_nongame_item-info">
-                <p>Devour - new map</p>
-                <div class="content_nongame_item_price">
-                    <span>Coming soon</span>
-                </div>
-            </div>
-        </div>
+            <!-- Swiper JS -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-        <div class="swiper-slide content_nongame_item">
-            <img src="assets/img/games/nongame/shopee_voucher.jpg" alt="">
-            <div class="content_nongame_item-info">
-                <p>Shopee voucher - 50% sales</p>
-                <div class="content_nongame_item_price">
-                    <span>Coming soon</span>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-slide content_nongame_item">
-            <img src="assets/img/games/nongame/freefire.jpg" alt="">
-            <div class="content_nongame_item-info">
-                <p>Free Fire battleground</p>
-                <div class="content_nongame_item_price">
-                    <span>$13.99</span> <del>$17.49</del>
-                </div>
-            </div>
-        </div>
-
-        <div class="swiper-slide content_nongame_item">
-            <img src="assets/img/games/nongame/vlr-nightmarket.jpg" alt="">
-            <div class="content_nongame_item-info">
-                <p>VALORANT - night market</p>
-                <div class="content_nongame_item_price">
-                    <span>Coming soon</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="swiper-slide content_nongame_item">
-            <img src="assets/img/games/nongame/taiuong.jpg" alt="">
-            <div class="content_nongame_item-info">
-                <p>Tai Ương (The scourge) - demo</p>
-                <div class="content_nongame_item_price">
-                    <span>Coming soon</span>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
- 
-</div>
-
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-var swiper = new Swiper(".mySwiper", {
-slidesPerView: 3,
-spaceBetween: 60,
-slidesPerGroup: 3,
-loop: true,
-loopFillGroupWithBlank: true,
-pagination: {
-el: ".swiper-pagination",
-clickable: true,
-},
-navigation: {
-nextEl: ".swiper-button-next",
-prevEl: ".swiper-button-prev",
-},
-});
-</script>
-
-
-</div>
-</div>
-<div class="swiper mySwiper content_nongame">
-    <p class="content_nongame-text">Top seller</p>
-    <div class="swiper-wrapper content_nongame_box">
-        <div class="swiper-slide content_nongame_item">
-            <img src="assets/img/games/nongame/hoa.jpg" alt="">
-            <div class="content_nongame_item-info">
-                <p>Hoa</p>
-                <div class="content_nongame_item_price">
-                    <span>$5.99</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="swiper-slide content_nongame_item">
-            <img src="assets/img/games/nongame/nomansky.jpg" alt="">
-            <div class="content_nongame_item-info">
-                <p>No Man Sky</p>
-                <div class="content_nongame_item_price">
-                    <span>$10.39</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="swiper-slide content_nongame_item">
-            <img src="assets/img/games/nongame/phasmophobia.jpg" alt="">
-            <div class="content_nongame_item-info">
-                <p>Phasmophobia</p>
-                <div class="content_nongame_item_price">
-                    <span>$3.99</span>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-slide content_nongame_item">
-            <img src="assets/img/games/nongame/projectzomboid.jpg" alt="">
-            <div class="content_nongame_item-info">
-                <p>Project Zomboid</p>
-                <div class="content_nongame_item_price">
-                    <span>$6.99</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="swiper-slide content_nongame_item">
-            <img src="assets/img/games/nongame/theforest.jpg" alt="">
-            <div class="content_nongame_item-info">
-                <p>The Forest</p>
-                <div class="content_nongame_item_price">
-                    <span>$3.39</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="swiper-slide content_nongame_item">
-            <img src="assets/img/games/nongame/spore.jpg" alt="">
-            <div class="content_nongame_item-info">
-                <p>Spore</p>
-                <div class="content_nongame_item_price">
-                    <span>$2.39</span>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-
-</div>
-
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-var swiper = new Swiper(".mySwiper", {
-slidesPerView: 3,
-spaceBetween: 60,
-slidesPerGroup: 3,
-loop: true,
-loopFillGroupWithBlank: true,
-pagination: {
-el: ".swiper-pagination",
-clickable: true,
-},
-navigation: {
-nextEl: ".swiper-button-next",
-prevEl: ".swiper-button-prev",
-},
-});
-</script>
-
-
-</div>
+            <!-- Initialize Swiper -->
+            <script>
+            var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 60,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+            });
+            </script>
 </div>
 
     <div class="modal"></div>
@@ -721,5 +666,11 @@ prevEl: ".swiper-button-prev",
             </div>
         </div>
     </footer>
+    </div>
+
+    <script src="assets/js/butter-scroll.js"></script>
+    <script>
+        butter.init();
+      </script>
 </body>
 </html>
